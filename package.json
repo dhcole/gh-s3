@@ -1,0 +1,11 @@
+{
+  "name": "gh-s3",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "s3-publish": "git://github.com/dhcole/s3-publish"
+  }
+}
