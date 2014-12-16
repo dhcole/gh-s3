@@ -24,8 +24,13 @@ server = http.createServer(function(req, res) {
     res.end('Nope.');
   }
 });
+
+// Start server
 server.listen(process.env.PORT || 3001, '127.0.0.1');
 console.log('Listening at http://127.0.0.1' + ':' + (process.env.PORT || 3001));
+
+// Run once to catch up on missed requests
+build();
 
 function build() {
   if (running) {
