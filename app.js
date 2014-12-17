@@ -26,8 +26,8 @@ server = http.createServer(function(req, res) {
 });
 
 // Start server
-server.listen(process.env.PORT || 3001, '127.0.0.1');
-console.log('Listening at http://127.0.0.1' + ':' + (process.env.PORT || 3001));
+server.listen(process.env.PORT || 3001, '0.0.0.0');
+console.log('Listening at http://0.0.0.0' + ':' + (process.env.PORT || 3001));
 
 // Run once to catch up on missed requests
 build();
